@@ -8,11 +8,11 @@
     <div class="form">
         <form action="{{ url('show') }}" method="get" id="form1">
             <div class="form-group">
-                <input name="search" id="search" class="form-control" placeholder="Country" autofocus required/>
+                <input name="search" id="search" class="form-control" placeholder="Country" autofocus required oninvalid="this.setCustomValidity('Field is empty!')" oninput="setCustomValidity('')" />
             </div>
             <br>
             <div class="form-group">
-                <input style="cursor:pointer" type="submit" class="btn btn-primary" id="submit" value="Search">
+                <input type="submit" class="btn btn-primary" id="submit" value="Search">
             </div>
         </form>
     </div>
