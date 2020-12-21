@@ -7,6 +7,11 @@ use Illuminate\Support\Facades\Http;
 
 class WeatherController extends Controller
 {
+    public function index()
+    {
+        return view('content');
+    }
+
     public function list()
     {
         $data = Http::get('http://api.weatherapi.com/v1/forecast.json?key=5f73d1590ee34c23a73110210201912&q=[lat],[long]&days=2')->json();
