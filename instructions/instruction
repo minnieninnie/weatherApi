@@ -1,0 +1,10 @@
+Technology stack:
+Laravel
+PHP 7.x
+WeatherApi is a Laravel 8.x project that uses real-time weather detection.
+It uses the Free Weather API (http://api.weatherapi.com).
+Implementation:
+You need to create your own account (http://api.weatherapi.com) to get a key then insert it in "WeatherController"
+to get the forecast for a city.
+Git clone cmd > git clone https://github.com/minnieninnie/weatherApi.git
+Composer update cmd > composer update
